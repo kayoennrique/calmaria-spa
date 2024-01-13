@@ -107,8 +107,8 @@
                 <p class="container__enrollment--form-text">Cadastre-se em nossa <span lang="en">newsletter</span> para receber descontos e
                     novidades sobre nossos serviços.</p>
                 <div class="container__enrollment--form-input">
-                    <input placeholder="Digite seu email" id="inscricao" type="email">>
-                    <button>Inscrever</button>
+                    <input placeholder="Digite seu email" id="inscricao" type="email">
+                    <button type="submit">Inscrever</button>
                 </div>
             </div>
             <img class="container__enrollment--mobile" src="./assets/mandala-inferior-mobile.svg" alt="">
@@ -122,7 +122,7 @@
                 <img src="./assets/contato-img-3.png"
                     alt="Mulher em uma banheira com pétalas de rosa, com apenas mãos e pernas aparentes, segurando um livro e com uma bandeja com uvas e chá.">
             </div>
-            <div action="." class="container__contact--form">
+            <form action="." class="container__contact--form">
                 <div class="container__contact--form-content">
                     <h5 class="container__contact--form-content-title">Entre em contato</h5>
                     <p class="container__contact--form-content-text">Reserve seu horário, tire dúvidas ou proponha
@@ -132,13 +132,13 @@
                 </div>
                 <div class="container__contact--inputs">
                     <label for="nome">Nome</label>
-                    <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome">
+                    <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome" required>
                     <label for="email">Email</label>
-                    <input type="email" placeholder="Digite seu email" id="email" name="email">
+                    <input type="email" placeholder="Digite seu email" id="email" name="email" required>
                     <label for="telefone">Telefone</label>
-                    <input type="text" placeholder="(XX) XXXX-XXXX"id="telefone" name="telefone">
-                    <div>
-                        <p class="container__contact--inputs--title">Prefere contato por:</p>
+                    <input type="text" placeholder="(XX) XXXX-XXXX"id="telefone" name="telefone" required>
+                    <fieldset>
+                        <legend class="container__contact--inputs--title">Prefere contato por:</legend>
                         <div class="container__contact--inputs--div">
                             <div>
                                 <input type="radio" id="ligacao" name="ligacao">
@@ -153,12 +153,12 @@
                                 <label for="email-contato">Email</label>
                             </div>
                         </div>
-                    </div>
+                    </fieldset>
                     <label for="mensagem">Mensagem</label>
-                    <textarea type="text" placeholder="Escreva sua mensagem" id="mensagem" name="mensagem"></textarea>
+                    <textarea type="text" placeholder="Escreva sua mensagem" maxlength="500" id="mensagem" name="mensagem"></textarea>
                 </div>
                 <button>Enviar</button>
-            </div>
+            </form>
         </section>
     </main>
 
