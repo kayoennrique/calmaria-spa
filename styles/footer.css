@@ -1,0 +1,25 @@
+.footer {
+    background: #E8F5C8;
+    padding: 3.2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.footer .footer__nav--list {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    padding: 1.5rem 0;
+}
+
+.footer .footer__nav--list .footer__nav--list--whatsapp::before {
+    content: url("/assets/Whatsapp.svg")
+}
+
+.footer .footer__nav--list .footer__nav--list--instagram::before {
+    content: url("/assets/Instragam.svg");
+}
+
+.footer .footer__nav--list .footer__nav--list--tiktok::before {
+    content: url("/assets/Tiktok.svg");
+}

@@ -1,0 +1,28 @@
+:root {
+  --font: "Montserrat", 'Krona One', 'Open Sans', sans-serif;
+  --gradient: linear-gradient(180deg, #E8F5C8 0%, rgb(255, 255, 255) 80%);
+  --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+  --light-green: #E8F5C8;
+  --button-blue: #4163DA;
+  --light-lilac: #85A0FF;
+  --dark-lilac: #0C0421;
+  --dark-blue: #4E75FF;
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+body {
+  font-family: var(--font);
+}
