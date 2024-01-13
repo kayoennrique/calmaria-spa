@@ -107,7 +107,7 @@
                 <p class="container__enrollment--form-text">Cadastre-se em nossa <span lang="en">newsletter</span> para receber descontos e
                     novidades sobre nossos serviços.</p>
                 <div class="container__enrollment--form-input">
-                    <input id="inscricao" type="email">
+                    <input placeholder="Digite seu email" id="inscricao" type="email">>
                     <button>Inscrever</button>
                 </div>
             </div>
@@ -131,31 +131,31 @@
                         você!</p>
                 </div>
                 <div class="container__contact--inputs">
-                    <label>Nome</label>
-                    <input type="text">
-                    <label>Email</label>
-                    <input type="email">
-                    <label>Telefone</label>
-                    <input type="text">
+                    <label for="nome">Nome</label>
+                    <input type="text" placeholder="Digite seu nome completo" id="nome" name="nome">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Digite seu email" id="email" name="email">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" placeholder="(XX) XXXX-XXXX"id="telefone" name="telefone">
                     <div>
                         <p class="container__contact--inputs--title">Prefere contato por:</p>
                         <div class="container__contact--inputs--div">
                             <div>
-                                <input type="radio">
-                                <label>Ligação</label>
+                                <input type="radio" id="ligacao" name="ligacao">
+                                <label for="ligacao">Ligação</label>
                             </div>
                             <div>
-                                <input type="radio">
-                                <label>WhatsApp</label>
+                                <input type="radio" id="WhatsApp" name="WhatsApp">
+                                <label for="WhatsApp">WhatsApp</label>
                             </div>
                             <div>
-                                <input type="radio">
-                                <label>Email</label>
+                                <input type="radio" id="email-contato" name="email-contato">
+                                <label for="email-contato">Email</label>
                             </div>
                         </div>
                     </div>
-                    <label>Mensagem</label>
-                    <textarea type="text"></textarea>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea type="text" placeholder="Escreva sua mensagem" id="mensagem" name="mensagem"></textarea>
                 </div>
                 <button>Enviar</button>
             </div>
