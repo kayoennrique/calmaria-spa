@@ -5,36 +5,32 @@
 }
 
 .container__first {
-    padding: 6.4rem 1.6rem;
+    padding: 64px 16px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    row-gap: 2.4rem;
+    row-gap: 24px;
 }
 
 .container__first--text h1 {
     font-family: Krona One;
-    font-size: 3.1rem;
+    font-size: 31px;
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    padding-bottom: 3.2rem;
-}
-
-.container__first--text h1 span {
-    color: var(--dark-blue);
+    padding-bottom: 32px;
 }
 
 .container__first--text-button {
-    width: 31.8rem;
-    height: 6.6rem;
+    width: 318px;
+    height: 66px;
     color: white;
     border: none;
-    border-radius: 6.6rem;
+    border-radius: 66px;
     background: var(--button-blue);
-    font-size: 2.4rem;
+    font-size: 24px;
     font-family: 'Montserrat';
     font-weight: 700;
 }
@@ -46,8 +42,8 @@
 }
 
 .container__first--image {
-    width: 29.7rem;
-    height: 38.4rem;
+    width: 297px;
+    height: 384px;
     align-self: end;
 }
 
@@ -57,24 +53,24 @@
     .container__first {
         align-items: center;
         text-align: start;
-        padding: 6.4rem 6rem;
+        padding: 64px 60px;
     }
 
     .container__first--text {
-        width: 48.6rem;
+        width: 486px;
     }
 
     .container__first--text h1 {
-        font-size: 4.2rem;
+        font-size: 42px;
     }
 
     .container__first--text-button {
-        width: 28rem;
+        width: 280px;
     }
 
     .container__first--image {
-        width: 43.2rem;
-        height: 55.8rem;
+        width: 432px;
+        height: 558px;
         align-self: center;
     }
 }
@@ -85,10 +81,10 @@
 
     .container__first {
         flex-direction: row;
-        padding: 0 22rem 8rem 22rem;
+        padding: 0 220px 80px 220px;
     }
 
     .container__first--image {
-        width: 47.4rem;
+        width: 474px;
     }
 }

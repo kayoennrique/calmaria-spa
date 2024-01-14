@@ -1,29 +1,29 @@
 
 .header {
-  background: var( --light-green);
+  background: var(--light-green);
 }
 
 .header .header__nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1.6rem;
-  padding: 4.0rem 1.6rem;
+  row-gap: 16px;
+  padding: 40px 16px;
   white-space: nowrap;
 }
 
 .header__nav--logo {
-  width: 17.2rem;
-  height: 5.6rem;
+  width: 172px;
+  height: 56px;
 }
 
 .header__nav--list {
-  font-size: 1.5rem;
+  font-size: 15px;
 }
 
 .header .header__nav .header__nav--line {
   width: 100%;
-  border-bottom: .1rem solid black;
+  border-bottom: 1px solid black;
 }
 
 .header .header__nav .header__nav--list {
@@ -33,7 +33,7 @@
 
 .header .header__nav .header__nav--list a {
   color: #0C0421;
-  margin: 0 2.1rem;
+  margin: 0 21px;
   text-decoration: none;
   font-weight: 400;
   line-height: 150%;
@@ -48,12 +48,12 @@
   /* Tablet */
 
   .header__nav--logo {
-    width: 27.0rem;
-    height: 8.8rem;
+    width: 270px;
+    height: 88px;
   }
 
   .header__nav--list {
-    font-size: 2.2rem;
+    font-size: 22px;
   }
 
 }
