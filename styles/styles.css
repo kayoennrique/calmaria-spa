@@ -152,4 +152,30 @@ header #home .img-home img {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: #0C0421;
+}
+#discount .input-btn {
+  width: 790px;
+  height: 65px;
+  border: 1px solid #4e75ff;
+  border-radius: 65px;
+  margin: 0 auto;
+  display: inline-flex;
+}
+#discount .input-btn input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+  width: 513.5px;
+  border: none;
+  outline: none;
+  margin-left: 2rem;
+}
+#discount .input-btn button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  width: 276.5px;
+  background: #4e75ff;
+  border-radius: 0 65px 65px 0;
+  border: none;
 }/*# sourceMappingURL=styles.css.map */

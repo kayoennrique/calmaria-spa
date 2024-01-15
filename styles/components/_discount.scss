@@ -1,15 +1,43 @@
 @use '../abstract/variables';
 @use '../abstract/mixins';
 
-#discount{
+#discount {
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    h4{
+
+    h4 {
         @include mixins.ff-fs-cl(variables.$ft-titles, 1.6rem, variables.$primary-color);
     }
-    p{
+
+    p {
         @include mixins.ff-fs-cl(variables.$ft-texts, 1.2rem, variables.$primary-color);
+    }
+
+    .input-btn {
+        $input-width: 790px;
+        width: $input-width;
+        height: 65px;
+        border: 1px solid variables.$secondary-color;
+        border-radius: 65px;
+        margin: 0 auto;
+        display: inline-flex;
+
+        input {
+            @include mixins.ff-fs-cl(variables.$ft-texts, 1.2rem, variables.$primary-color);
+            width: calc($input-width * 0.65);
+            border: none;
+            outline: none;
+            margin-left: 2rem;
+        }
+
+        button {
+            @include mixins.ff-fs-cl(variables.$ft-texts, 1.2rem, white);
+            width: calc($input-width * 0.35);
+            background: variables.$secondary-color;
+            border-radius: 0 65px 65px 0;
+            border: none;
+        }
     }
 }
