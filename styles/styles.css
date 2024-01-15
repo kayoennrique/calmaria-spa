@@ -31,10 +31,9 @@ header nav ul a {
   font-size: 1rem;
   color: #0C0421;
   font-weight: 500;
-  transition: 0.3s;
 }
 header nav ul a:hover {
-  transform: scale(1.2);
+  color: #0C0421;
   font-weight: 700;
 }
 header #home {
@@ -66,6 +65,9 @@ header #home .texts-home .btn-main {
   border-radius: 66px;
   background: #CAD4FA;
   font-size: 1.3rem;
+}
+header #home .texts-home .btn-main:hover {
+  background: #4e75ff;
 }
 header #home .img-home {
   max-width: 474px;
@@ -105,4 +107,32 @@ header #home .img-home img {
 }
 #our-space .details:nth-child(2) {
   flex-direction: row-reverse;
+}
+
+#service {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 5rem 0;
+}
+#service .cards {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  gap: 1.5rem;
+}
+#service .cards .card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 3rem;
+}
+#service .cards .card-title {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  color: #0C0421;
+}
+#service .cards .card-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
 }/*# sourceMappingURL=styles.css.map */

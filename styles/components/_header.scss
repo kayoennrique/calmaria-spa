@@ -28,10 +28,8 @@ header {
                 text-decoration: none;
                 @include mixins.ff-fs-cl(variables.$ft-texts, 1rem, variables.$primary-color);
                 font-weight: 500;
-                transition: .3s;
-
-                &:hover {
-                    transform: scale(1.2);
+                &:hover{
+                    color: variables.$primary-color;
                     font-weight: 700;
                 }
             }
@@ -68,6 +66,9 @@ header {
                 border-radius: 66px;
                 background: variables.$default-color;
                 font-size: 1.3rem;
+                &:hover{
+                    background: variables.$secondary-color;
+                }
             }
         }
 
