@@ -1,11 +1,23 @@
+$primary-color: #0C0421;
+$secondary-color: #4e75ff;
+$tertiary-color: #85a0ff;
+$quaternary-color: #E8F5C8;
+$default-color: #CAD4FA;
+$primary-gradient: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+$secondary-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+
+$ft-texts: 'Montserrat', sans-serif;
+$ft-titles: 'Krona One', sans-serif;
+
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 header {
-    background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
-    padding: 2rem;
+    background: $primary-gradient;
+  padding: 2rem;
     nav {
         display: flex;
         flex-direction: column;
@@ -23,9 +35,9 @@ header {
             }
             a {
                 text-decoration: none;
-                color: rgba(12, 4, 33, 1);
+                color: $primary-color;
                 font-weight: 500;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $ft-texts;
             }
         }
     }
