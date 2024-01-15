@@ -14,7 +14,7 @@ header nav {
   align-items: center;
   gap: 1.6rem;
 }
-header nav .line {
+header nav .linha {
   border-top: 1px solid black;
   width: 80%;
 }
@@ -27,7 +27,49 @@ header nav ul li {
 }
 header nav ul a {
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
   color: #0C0421;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+}
+header #home {
+  max-width: 1040px;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #home .texts-home {
+  width: 464px;
+}
+header #home .texts-home h1 {
+  font-size: 42px;
+  color: #0C0421;
+  margin-bottom: 2rem;
+  font-family: "Krona One", sans-serif;
+}
+header #home .texts-home h1 span {
+  color: #4e75ff;
+}
+header #home .texts-home .btn-main {
+  width: 280px;
+  height: 66px;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 66px;
+  background: #CAD4FA;
+  font-size: 1.3rem;
+}
+header #home .img-home {
+  max-width: 474px;
+}
+header #home .img-home img {
+  width: 100%;
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
 }/*# sourceMappingURL=styles.css.map */

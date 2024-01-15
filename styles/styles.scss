@@ -1,44 +1,4 @@
-$primary-color: #0C0421;
-$secondary-color: #4e75ff;
-$tertiary-color: #85a0ff;
-$quaternary-color: #E8F5C8;
-$default-color: #CAD4FA;
-$primary-gradient: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
-$secondary-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+@use './abstract/root';
 
-$ft-texts: 'Montserrat', sans-serif;
-$ft-titles: 'Krona One', sans-serif;
-
-
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-header {
-    background: $primary-gradient;
-  padding: 2rem;
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.6rem;
-        .line {
-            border-top: 1px solid black;
-            width: 80%;
-        }
-        ul {
-            display: inline-flex;
-            gap: 2rem;
-            li {
-                list-style-type: none;
-            }
-            a {
-                text-decoration: none;
-                color: $primary-color;
-                font-weight: 500;
-                font-family: $ft-texts;
-            }
-        }
-    }
-}
+@use './components/header';
+@use './components/our-space';
