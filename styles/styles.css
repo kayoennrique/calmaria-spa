@@ -178,4 +178,84 @@ header #home .img-home img {
   background: #4e75ff;
   border-radius: 0 65px 65px 0;
   border: none;
+}
+
+#contacts {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#contacts .contacts-imgs {
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-around;
+}
+#contacts .contacts-imgs img {
+  width: 100%;
+}
+#contacts .contacts-imgs img:nth-child(n+2) {
+  width: 48%;
+}
+#contacts .contacts-form {
+  max-width: 50%;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+}
+#contacts .contacts-form .titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.9rem;
+  color: #4e75ff;
+}
+#contacts .contacts-form .infos, #contacts .contacts-form .inputs .form-group label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+}
+#contacts .contacts-form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+#contacts .contacts-form .inputs input, #contacts .contacts-form .inputs .btn, #contacts .contacts-form .inputs .form-group textarea {
+  border-radius: 25px;
+  padding: 1rem;
+  border: none;
+}
+#contacts .contacts-form .inputs .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#contacts .contacts-form .inputs .form-group label {
+  font-weight: bold;
+}
+#contacts .contacts-form .inputs .btn {
+  background: #CAD4FA;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  transition: 0.3s;
+}
+#contacts .contacts-form .inputs .btn:hover {
+  background: #4e75ff;
+}
+
+footer {
+  background: #E8F5C8;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #0C0421;
 }/*# sourceMappingURL=styles.css.map */
