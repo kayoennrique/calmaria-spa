@@ -1,0 +1,15 @@
+@use '../abstract/variables';
+@use '../abstract/mixins';
+
+#discount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    h4{
+        @include mixins.ff-fs-cl(variables.$ft-titles, 1.6rem, variables.$primary-color);
+    }
+    p{
+        @include mixins.ff-fs-cl(variables.$ft-texts, 1.2rem, variables.$primary-color);
+    }
+}

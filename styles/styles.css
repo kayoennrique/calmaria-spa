@@ -135,4 +135,21 @@ header #home .img-home img {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: #0C0421;
+}
+
+#discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+#discount h4 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  color: #0C0421;
+}
+#discount p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
 }/*# sourceMappingURL=styles.css.map */
