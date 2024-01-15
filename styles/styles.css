@@ -31,6 +31,11 @@ header nav ul a {
   font-size: 1rem;
   color: #0C0421;
   font-weight: 500;
+  transition: 0.3s;
+}
+header nav ul a:hover {
+  transform: scale(1.2);
+  font-weight: 700;
 }
 header #home {
   max-width: 1040px;
@@ -69,7 +74,35 @@ header #home .img-home img {
   width: 100%;
 }
 
-#nosso-espaco {
+#our-space {
   margin: 0 auto;
   width: 80%;
+}
+#our-space .details {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+#our-space .details .imgs-space, #our-space .details .space-texts {
+  max-width: 500px;
+}
+#our-space .details .space-texts .title {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.8rem;
+  color: #4e75ff;
+  font-weight: 500;
+}
+#our-space .details .space-texts .infos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+}
+#our-space .details .space-texts .separator {
+  width: 100%;
+}
+#our-space .details:nth-child(2) {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,32 @@
+@use '../abstract/variables';
 @use '../abstract/mixins';
-#nosso-espaco{
+#our-space{
     @include mixins.center-margin(80%);
+    .details{
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 2rem 0;
+        .imgs-space{
+            max-width: 500px;
+        }
+        .space-texts{
+            @extend .imgs-space;
+            .title{
+                @include mixins.ff-fs-cl(variables.$ft-titles, 1.8rem, variables.$secondary-color);
+                font-weight: 500;
+            }
+            .infos{
+                @include mixins.ff-fs-cl(variables.$ft-texts, 1.2rem, variables.$primary-color);
+            }
+            .separator{
+                width: 100%;
+            }
+        }
+        &:nth-child(2){
+            flex-direction: row-reverse;
+        }
+    }
 }
