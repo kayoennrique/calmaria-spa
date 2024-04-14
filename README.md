@@ -19,7 +19,7 @@ During this course we will use:
 
 ## 📁 Figma Link
 
-You can [access the project figma here] (https://www.figma.com/file/1pDTUXo7ovT6zlE64Zw509/Calmaria-Spa--%7C-Forma%C3%A7%C3%A3o-Acessabilidade?type=design&node-id=1289%3A1086&mode=dev).
+You can [access the project figma here](https://www.figma.com/file/1pDTUXo7ovT6zlE64Zw509/Calmaria-Spa--%7C-Forma%C3%A7%C3%A3o-Acessibilidade?type=design&node-id=1289%3A1086&mode=dev).
 
 ## 🛠️ Open and run the project
 
