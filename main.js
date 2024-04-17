@@ -1,18 +1,24 @@
-document.querySelectorAll(".header__list-item").forEach(
-    (item,
-        () => {
-            // add a mouseover listener
-            item.addEventListener("mouseover", () => toggleSubmenu(item, true));
+function toggleSubmenu(item, mostrar) {
+    const submenu = item.querySelector(".submenu");
 
-            // add a mouseout listener
-            item.addEventListener("mouseout", () => toggleSubmenu(item, false));
+    if (submenu) {
+        submenu.style.display = mostrar ? "block" : "none";
+    }
+}
 
-            item.addEventListener("click", () => {
-                const submenu = item.querySelector(".submenu");
+//select all header__list-item
+document.querySelectorAll(".header__list-item").forEach((item) => {
+    // add a mouseout listener
+    item.addEventListener("mouseover", () => toggleSubmenu(item, true));
 
-                const isDisplayed = submenu.style.display === "block";
+    //add a mouseout listener
+    item.addEventListener("mouseout", () => toggleSubmenu(item, false));
 
-                toggleSubmenu(item, !isDisplayed);
-            });
-        })
-);
+    item.addEventListener("click", () => {
+        const submenu = item.querySelector(".submenu");
+
+        const isDisplayed = submenu.style.display === "block";
+
+        toggleSubmenu(item, !isDisplayed);
+    });
+});
