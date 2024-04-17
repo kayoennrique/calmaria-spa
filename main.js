@@ -1,8 +1,17 @@
-function toggleSubmenu(item, mostrar) {
+function toggleSubmenu(item, show) {
     const submenu = item.querySelector(".submenu");
 
     if (submenu) {
-        submenu.style.display = mostrar ? "block" : "none";
+        submenu.style.display = show ? "block" : "none";
+
+        const menuItem = item.querySelector(".header__list-item a");
+        menuItem.setAttribute("aria-expanded", show ? true : false);
+
+        const DropdownExpandedIcon = item.querySelector(
+            ".material-symbols-outlined.icone"
+        );
+
+        DropdownExpandedIcon.classList.toggle("active", show);
     }
 }
 
