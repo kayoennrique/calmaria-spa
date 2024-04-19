@@ -54,3 +54,15 @@ document.querySelectorAll(".header__list-item").forEach((item) => {
         toggleSubmenu(item, !isDisplayed);
     });
 });
+
+/**
+ * Accordion
+ */
+document.querySelectorAll(".accordion-button").forEach((button) => {
+    button.addEventListener("click", () => toggleAccordion(button));
+});
+
+function toggleAccordion(button) {
+    const content = button.nextElementSibling;
+    content.classList.add("expanded");
+}
