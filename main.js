@@ -10,6 +10,12 @@ function toggleModal(modalId, open) {
     document.body.style.overflow = open ? "hidden" : "auto";
 }
 
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        toggleModal("see-modal-registered", false);
+    }
+});
+
 
 function toggleSubmenu(item, show) {
     const submenu = item.querySelector(".submenu");
