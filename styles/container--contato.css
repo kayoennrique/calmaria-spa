@@ -233,7 +233,7 @@
   margin: 20px 0;
 }
 
-.btn-fechar {
+.btn-closed {
   font-family: "Montserrat", sans-serif;
   width: 40%;
   border: none;
@@ -247,7 +247,7 @@
   transition: all 0.3s ease;
 }
 
-.btn-fechar:hover {
+.btn-closed:hover {
   background: var(--lilas-claro);
   transition: 0.5s;
 }

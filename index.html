@@ -131,22 +131,23 @@
         <div class="container__incricao--form-input">
           <input placeholder="Digite seu email" aria-label="email" id="inscricao" type="email">
 
-          <button type="submit">
+          <button type="submit" onclick="toggleModal('see-modal-registered', true)">
             Inscrever
           </button>
         </div>
       </div>
       <!-- Modal de formulário inscrito com sucesso -->
-      <div id="ver-modal-inscrito" class="modal-enviado" role="dialog" aria-labelledby="cabecalho-titulo-modal-enviado"
-        aria-modal="true">
+      <div id="see-modal-registered" class="modal-enviado" role="dialog"
+        aria-labelledby="cabecalho-titulo-modal-enviado" aria-modal="true">
         <div class="conteudo-modal-enviado">
           <div class="cabecalho-modal-enviado">
             <h2 id="cabecalho-titulo-modal-enviado" class="cabecalho-titulo-modal-enviado">
               Você foi inscrito com sucesso!
             </h2>
             <img class="cabecalho-icone-modal-enviado" src="./assets/icon-enviado.png" alt="" />
-            <!-- Botão para fechar a janela modal 'ver-modal-inscrito -->
-            <button class="btn-fechar" tabindex="0" aria-label="Fechar formulário enviado">
+            <!-- Botão para fechar a janela modal 'see-modal-registered -->
+            <button class="btn-closed" onclick="toggleModal('see-modal-registered', false)" tabindex="0"
+              aria-label="Fechar formulário enviado">
               Fechar
             </button>
           </div>
@@ -254,7 +255,7 @@
           </h2>
           <img class="cabecalho-icone-modal-enviado" src="./assets/icon-enviado.png" alt="" />
           <!-- Botão para fechar a janela modal 'ver-modal-enviado' contato-->
-          <button class="btn-fechar" tabindex="0" aria-label="Fechar formulário enviado">
+          <button class="btn-closed" tabindex="0" aria-label="Fechar formulário enviado">
             Fechar
           </button>
         </div>
