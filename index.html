@@ -240,7 +240,8 @@
 
         <div class="rodape-modal">
           <!-- Botão para fechar a janela modal 'see-modal-contact' -->
-          <button class="btn-enviar" tabindex="0">
+          <button class="btn-send"
+            onclick="toggleModal('see-modal-contact', false), toggleModal('see-modal-sent', true)" tabindex="0">
             Enviar
           </button>
         </div>
@@ -248,7 +249,7 @@
     </section>
 
     <!-- Modal de formulário enviado contato -->
-    <section id="ver-modal-enviado" class="modal-enviado" role="dialog" aria-labelledby="cabecalho-titulo-modal-enviado"
+    <section id="see-modal-sent" class="modal-enviado" role="dialog" aria-labelledby="cabecalho-titulo-modal-enviado"
       aria-modal="true">
       <div class="conteudo-modal-enviado">
         <div class="cabecalho-modal-enviado">
@@ -256,7 +257,7 @@
             Mensagem enviada com sucesso!
           </h2>
           <img class="cabecalho-icone-modal-enviado" src="./assets/icon-enviado.png" alt="" />
-          <!-- Botão para fechar a janela modal 'ver-modal-enviado' contato-->
+          <!-- Botão para fechar a janela modal 'see-modal-sent' contato-->
           <button class="btn-closed" tabindex="0" aria-label="Fechar formulário enviado">
             Fechar
           </button>
