@@ -8,6 +8,27 @@ function manageModalFocus(modalId) {
     const lastElement = elementsModal[elementsModal.length - 1];
 
     firstElement.focus();
+
+    modal.addEventListener("keydown", (event) => {
+        if (event.key === "Tab") {
+            if (event.shiftKey) {
+                // If Shift+tab is pressed, and focus is on the first element, move to the last
+                if (document.activeElement === firstElement) {
+                    event.preventDefault();
+                    lastElement.focus();
+                }
+            } else {
+                // If the Tab key is pressed, and the focus is on the last one, move to the first
+                if (
+                    document.activeElement === lastElement ||
+                    !modal.contains(document.activeElement)
+                ) {
+                    event.preventDefault();
+                    firstElement.focus();
+                }
+            }
+        }
+    });
 }
 
 function toggleModal(modalId, open) {
@@ -15,6 +36,7 @@ function toggleModal(modalId, open) {
 
     if (open) {
         modal.style.display = "block";
+        manageModalFocus(modalId);
     } else {
         modal.style.display = "none";
     }
