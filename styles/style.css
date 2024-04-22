@@ -250,9 +250,13 @@ body {
   max-height: 250px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1660px) {
   .cabecalho .cabecalho__nav {
     flex-direction: column;
+  }
+
+  .acordeao-item {
+    max-width: 95%;
   }
 
   .accordion-button {
