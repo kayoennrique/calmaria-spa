@@ -1,37 +1,26 @@
 # Calmaria Spa
 
-Calmaria Spa is a well-being and health company. At this point, we have the initial code for your landing page, where we will find points for improvement to make the project accessible to all users.
+An application for manipulating interactive elements such as menus with submenus, modals and accordions with a focus on accessibility.
 
-<img src="./assets/screenshot.png" alt="Calmaria Spa" width="50%">
-
+![application screenshot](./screenshot-calmaria-spa.png)
 
 ## 🔨 Project features
 
-At this moment, we have the page that was designed as a delivery from the development team.
-
-During the project, we will analyze the entire HTML structure and refactor the necessary points of the application.
-The challenge is to find points for improvement in the semantics of the HTML code, to make the Calmaria Spa project accessible to all users.
-
-You can find the [Figma for this application here](https://www.figma.com/file/1pDTUXo7ovT6zlE64Zw509/Calmaria-Spa--%7C-Forma%C3%A7%C3%A3o-Acessabilidade?type=design&node-id=98-1263&mode=design&t=iIe3hZrzPEvVEi0o-0).
+The App is a page where until now all elements are visual only. It has a navigation menu with submenu, a modal to sign up and get a discount, a modal to get in touch and an accordion with the most frequently asked questions, all of these elements will be interactive using JavaScript.
 
 ## ✔️ Techniques and technologies used
 
-Check out this list of everything we will use in this project:
+During this course we will use:
 
-- `HTML`
-- `CSS`
-- `Web Accessibility`
 - `Figma`
+- `JavaScript`
+- `HTLM`
+- `CSS`
 
-And much more!
+## 📁 Figma Link
+
+You can [access the project figma here](https://www.figma.com/file/1pDTUXo7ovT6zlE64Zw509/Calmaria-Spa--%7C-Forma%C3%A7%C3%A3o-Acessibilidade?type=design&node-id=1289%3A1086&mode=dev).
 
 ## 🛠️ Open and run the project
 
-To open and run the project, use a code editor of your choice.
-
-Then, open the project in your browser.
-
-## 📚 More project information
-
-Calmaria Spa is a fictitious company.
-The main idea of ​​this project is to further develop knowledge in Web Accessibility with a focus on CSS.
+You can open an `index.html` page using VSCode with the `Live Server` extension for automatic viewing and updating, or open the `index.html` file directly in the browser and manually update after changes. Both methods display the page in the browser.
