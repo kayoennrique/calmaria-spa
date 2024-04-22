@@ -1,3 +1,5 @@
+let lastFocusedElement;
+
 function manageModalFocus(modalId) {
     const modal = document.querySelector(`#${modalId}`);
     const elementsModal = modal.querySelectorAll(
@@ -24,7 +26,6 @@ function manageModalFocus(modalId) {
                     !modal.contains(document.activeElement)
                 ) {
                     event.preventDefault();
-                    firstElement.focus();
                 }
             }
         }
@@ -35,10 +36,16 @@ function toggleModal(modalId, open) {
     const modal = document.querySelector(`#${modalId}`);
 
     if (open) {
+        lastFocusedElement = document.activeElement;
+
         modal.style.display = "block";
         manageModalFocus(modalId);
     } else {
         modal.style.display = "none";
+
+        if (lastFocusedElement) {
+            lastFocusedElement.focus();
+        }
     }
 
     document.body.style.overflow = open ? "hidden" : "auto";
