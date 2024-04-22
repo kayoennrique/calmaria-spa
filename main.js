@@ -26,6 +26,7 @@ function manageModalFocus(modalId) {
                     !modal.contains(document.activeElement)
                 ) {
                     event.preventDefault();
+                    firstElement.focus();
                 }
             }
         }
