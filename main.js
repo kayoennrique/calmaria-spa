@@ -13,6 +13,7 @@ function toggleModal(modalId, open) {
 document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
         toggleModal("see-modal-registered", false);
+        toggleModal("see-modal-contact", false);
 
         document.querySelectorAll(".header__list-item").forEach((item) => {
             toggleSubmenu(item, false);
