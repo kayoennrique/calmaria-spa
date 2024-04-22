@@ -1,3 +1,15 @@
+function manageModalFocus(modalId) {
+    const modal = document.querySelector(`#${modalId}`);
+    const elementsModal = modal.querySelectorAll(
+        'a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+
+    const firstElement = elementsModal[0];
+    const lastElement = elementsModal[elementsModal.length - 1];
+
+    firstElement.focus();
+}
+
 function toggleModal(modalId, open) {
     const modal = document.querySelector(`#${modalId}`);
 
