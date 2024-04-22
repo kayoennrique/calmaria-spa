@@ -67,6 +67,14 @@ function toggleAccordion(button) {
     content.classList.add("expanded");
     const isAlreadyOpen = button.getAttribute("aria-expanded") === "true";
 
+    document.querySelectorAll(".accordion-button").forEach(btn => {
+        btn.setAttribute("aria-expanded", "false");
+
+        const content = btn.nextElementSibling;
+        content.classList.remove("expanded");
+        content.setAttribute("aria-hidden", "true");
+    });
+
     if (!isAlreadyOpen) {
         button.setAttribute("aria-expanded", "true");
 
